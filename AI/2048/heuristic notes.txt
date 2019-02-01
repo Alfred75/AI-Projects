@@ -1,0 +1,20 @@
+evaluation function is the expected gain
+> maxTile
+depends on score
+Note: game scoring is based on maxTile which complicates things because of the non differentiability
+So we need 2 eval functions:
+1 based on maxTile for endGame when we actually reach leaves
+1 based on heuristics
+the 2 can be dependant based on score (if score is high endGame is more important)
+This relationship is probably not linear (i.e: position more important if score is low,
+endGame eval more important when score is high)
+
+Notes:
+
+1. Replace comparison by Hash. 
+2. Start implementing without rotation
+3. implement symmetries
+
+
+
+
